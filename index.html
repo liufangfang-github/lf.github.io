@@ -85,7 +85,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<p><strong>事件委托:</strong>就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.<br><strong>优点:</strong><br>+<em> 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似的子元素，可以通过委托给父元素的监听函数来处理事件<br>+</em>可以方便地动态添加和修改元素，不需要因为元素的改动而修改事件绑定<br>+<em>JavaScript和DOM节点之间的关联变少了，这样也就减少了因循环引用而带来的内存泄漏发生的概率<br>  <a href="https://zhuanlan.zhihu.com/p/26536815" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26536815</a><br><strong>缺点:</strong><br>+</em> 事件委托是基于冒泡的 blur和focus事件不支持<br>+*层级过多，冒泡过程中，可能会被某层阻止掉（建议就近委托）</p>
+<p><strong>事件委托: </strong>就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.<br><strong>优点:</strong></p>
+<ul>
+<li>管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似的子元素，可以通过委托给父元素的监听函数来处理事件<br><em>可以方便地动态添加和修改元素，不需要因为元素的改动而修改事件绑定
+</em>JavaScript和DOM节点之间的关联变少了，这样也就减少了因循环引用而带来的内存泄漏发生的概率<br><a href="https://zhuanlan.zhihu.com/p/26536815" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26536815</a><br><strong>缺点:</strong></li>
+<li>事件委托是基于冒泡的 blur和focus事件不支持<br>*层级过多，冒泡过程中，可能会被某层阻止掉（建议就近委托）</li>
+</ul>
 </blockquote>
 <p>总之一切都是基于冒泡的，只要事件不支持冒泡或者中途有event.stopPropagation（）等，那么委托就会失败，所以并不适用于直接在document上进行委托。</p>
 

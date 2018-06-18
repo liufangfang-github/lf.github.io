@@ -89,7 +89,7 @@
 <ul>
 <li>管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似的子元素，可以通过委托给父元素的监听函数来处理事件</li>
 <li>可以方便地动态添加和修改元素，不需要因为元素的改动而修改事件绑定</li>
-<li>JavaScript和DOM节点之间的关联变少了，这样也就减少了因循环引用而带来的内存泄漏发生的概率<br><a href="https://zhuanlan.zhihu.com/p/26536815" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26536815</a><br><strong>缺点:</strong></li>
+<li>JavaScript和DOM节点之间的关联变少了，这样也就减少了因循环引用而带来的内存泄漏发生的概率<br><a href="https://zhuanlan.zhihu.com/p/26536815" target="_blank" rel="noopener">资料来源</a><br><strong>缺点:</strong></li>
 <li>事件委托是基于冒泡的 blur和focus事件不支持</li>
 <li>层级过多，冒泡过程中，可能会被某层阻止掉（建议就近委托）</li>
 </ul>
@@ -134,7 +134,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<li align="left"><font face="微软雅黑" size="14px">1. 创建一个XMLHTTPRequest对象</font></li><br><li align="left">&lt;font face=”微软雅黑” size=”14px&gt;2. 创建http请求（只打开url，并不发送请求）</li><br><li align="left">&lt;font face=”微软雅黑” size=”14px&gt;3. 发送数据（get或post）</li><br><li align="left">&lt;font face=”微软雅黑” size=”14px&gt;4. 设置回调函数的状态</li>
+<li align="left"><font face="微软雅黑">1. 创建一个XMLHTTPRequest对象</font></li><br><li align="left"><font face="微软雅黑">2. 创建http请求（只打开url，并不发送请求）</font></li><br><li align="left"><font face="微软雅黑">3. 发送数据（get或post）</font></li><br><li align="left"><font face="微软雅黑">4. 设置回调函数的状态</font></li>
 </blockquote>
 
       

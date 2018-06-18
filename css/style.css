@@ -626,7 +626,7 @@ a.article-title:hover {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.4em;
   margin: 1.6em 20px;
-  text-align: center;
+  text-align: left;
 }
 .article-entry blockquote footer {
   font-size: 14px;
@@ -656,7 +656,7 @@ a.article-title:hover {
   font-size: 0.9em;
   margin-top: 0.5em;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 .article-entry .video-container {
   position: relative;
@@ -775,7 +775,7 @@ a.article-title:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 50px;
-  text-align: center;
+  text-align: left;
   display: block;
 }
 .article-nav-link-wrap:hover {
@@ -1027,7 +1027,7 @@ a.article-title:hover {
   box-shadow: 1px 2px 3px #ddd;
   border: 1px solid #ddd;
   border-radius: 3px;
-  text-align: center;
+  text-align: left;
   color: #999;
   overflow: hidden;
 }

@@ -1,7 +1,208 @@
-<h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><ol>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Ajax | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ajax 发送请求的步骤 创建一个XMLHTTPRequest对象 创建http请求（只打开url，并不发送请求） 发送数据（get或post 设置回调函数的状态  HTTP状态码1**：信息，服务器收到请求，需要请求者继续执行操作2**：成功，操作被成功接受并处理3**：重定向，需要进一步的操作以完成请求4**：客户端错误，请求包含语法错误或无法完成请求5**：服务器错误，服务器在处理请求的过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ajax">
+<meta property="og:url" content="http://yoursite.com/2018/06/01/你好，hexo/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Ajax 发送请求的步骤 创建一个XMLHTTPRequest对象 创建http请求（只打开url，并不发送请求） 发送数据（get或post 设置回调函数的状态  HTTP状态码1**：信息，服务器收到请求，需要请求者继续执行操作2**：成功，操作被成功接受并处理3**：重定向，需要进一步的操作以完成请求4**：客户端错误，请求包含语法错误或无法完成请求5**：服务器错误，服务器在处理请求的过程">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-19T15:35:45.841Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ajax">
+<meta name="twitter:description" content="Ajax 发送请求的步骤 创建一个XMLHTTPRequest对象 创建http请求（只打开url，并不发送请求） 发送数据（get或post 设置回调函数的状态  HTTP状态码1**：信息，服务器收到请求，需要请求者继续执行操作2**：成功，操作被成功接受并处理3**：重定向，需要进一步的操作以完成请求4**：客户端错误，请求包含语法错误或无法完成请求5**：服务器错误，服务器在处理请求的过程">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-你好，hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/01/你好，hexo/" class="article-date">
+  <time datetime="2018-06-01T13:02:55.000Z" itemprop="datePublished">2018-06-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Ajax
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><ol>
 <li>创建一个XMLHTTPRequest对象</li>
 <li>创建http请求（只打开url，并不发送请求）</li>
 <li>发送数据（get或post</li>
 <li>设置回调函数的状态</li>
 </ol>
 <h2 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h2><p>1**：信息，服务器收到请求，需要请求者继续执行操作<br>2**：成功，操作被成功接受并处理<br>3**：重定向，需要进一步的操作以完成请求<br>4**：客户端错误，请求包含语法错误或无法完成请求<br>5**：服务器错误，服务器在处理请求的过程中发生了错误</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/01/你好，hexo/" data-id="cjiltripd0003hhcb3t7vrwm8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/06/01/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          事件委托
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/06/19/nodejs/">nodejs</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/04/show-html/">网页生成</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/01/hello-world/">事件委托</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/01/你好，hexo/">Ajax</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

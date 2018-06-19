@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>show_html | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改DOM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="show_html">
+<meta property="og:url" content="http://yoursite.com/2018/06/19/show-html/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改DOM">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-19T13:56:53.457Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="show_html">
+<meta name="twitter:description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改DOM">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-show-html" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-show-html" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/19/show-html/" class="article-date">
   <time datetime="2018-06-19T13:46:04.000Z" itemprop="datePublished">2018-06-19</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/19/show-html/">show_html</a>
+    <h1 class="article-title" itemprop="name">
+      show_html
     </h1>
   
 
@@ -102,103 +104,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/01/hello-world/" class="article-date">
-  <time datetime="2018-06-01T13:12:55.000Z" itemprop="datePublished">2018-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/01/hello-world/">事件委托</a>
-    </h1>
+    <a href="/2018/06/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">事件委托</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<p></p><p align="left"> <strong>事件委托: </strong>就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. </p><p></p>
-<h4 id="优点"><a href="#优点" class="headerlink" title="优点:"></a>优点:</h4><ul>
-<li>管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似的子元素，可以通过委托给父元素的监听函数来处理事件</li>
-<li>可以方便地动态添加和修改元素，不需要因为元素的改动而修改事件绑定</li>
-<li>JavaScript和DOM节点之间的关联变少了，这样也就减少了因循环引用而带来的内存泄漏发生的概率<br>  <a href="https://zhuanlan.zhihu.com/p/26536815" target="_blank" rel="noopener">资料来源</a></li>
-</ul>
-</blockquote>
-<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点:"></a>缺点:</h4><blockquote>
-<ul>
-<li>事件委托是基于冒泡的 blur和focus事件不支持</li>
-<li>层级过多，冒泡过程中，可能会被某层阻止掉（建议就近委托）</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>总之一切都是基于冒泡的，只要事件不支持冒泡或者中途有event.stopPropagation（）等，那么委托就会失败，所以并不适用于直接在document上进行委托。</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/01/hello-world/" data-id="cjilr5zds00007ycbiutpainu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="false-你好，hexo" class="article article-type-false" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/01/你好，hexo/" class="article-date">
-  <time datetime="2018-06-01T13:02:55.000Z" itemprop="datePublished">2018-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/01/你好，hexo/">Ajax</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<li><font face="微软雅黑">1. 创建一个XMLHTTPRequest对象</font></li><br><li><font face="微软雅黑">2. 创建http请求（只打开url，并不发送请求）</font></li><br><li><font face="微软雅黑">3. 发送数据（get或post）</font></li><br><li><font face="微软雅黑">4. 设置回调函数的状态</font></li><br>—<br>## HTTP状态码<br><li><font face="微软雅黑">1<strong>：信息，服务器收到请求，需要请求者继续执行操作</strong></font></li><br><li><font face="微软雅黑">2：成功，操作被成功接受并处理</font></li><br><li><font face="微软雅黑">3<strong>：重定向，需要进一步的操作以完成请求</strong></font></li><br><li><font face="微软雅黑">4：客户端错误，请求包含语法错误或无法完成请求</font></li><br><li><font face="微软雅黑">5**：服务器错误，服务器在处理请求的过程中发生了错误</font></li>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/01/你好，hexo/" data-id="cjilr5ze000027ycbs7ex0r7t" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         

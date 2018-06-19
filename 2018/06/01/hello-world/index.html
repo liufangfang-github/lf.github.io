@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>事件委托 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Ajax 发送请求的步骤  事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.  优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="事件委托">
+<meta property="og:url" content="http://yoursite.com/2018/06/01/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Ajax 发送请求的步骤  事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.  优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-19T13:46:56.508Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="事件委托">
+<meta name="twitter:description" content="Ajax 发送请求的步骤  事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.  优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,53 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-show-html" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/19/show-html/" class="article-date">
-  <time datetime="2018-06-19T13:46:04.000Z" itemprop="datePublished">2018-06-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/19/show-html/">show_html</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="网页生成的过程"><a href="#网页生成的过程" class="headerlink" title="网页生成的过程"></a>网页生成的过程</h2><blockquote>
-<li>1. HTML代码转化成DOM</li><br><li>2. CSS代码转化成CSSOM（CSS Object Model）</li><br><li>3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）</li><br><li>4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成</li><br><li>5. 将布局绘制（paint）在屏幕上</li>
-
-<p>网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:</p>
-<li><em> 修改DOM</em></li><br><li> 修改样式表</li><br><li>* 用户事件(比如鼠标悬停,页面滚动,输入框键入文字,改变窗口大小等)</li>
-
-<p>重新渲染, 就需要重新生成布局和重新绘制,前者叫做重排(reflow),后者叫重绘(repaint)<br>重绘不一定需要重排,比如更改网页元素的背景色,就只会触发重绘,不会触发重排,因为布局没有改变,但是,重排必定导致重绘,比如改变一个网页元素的位置就会同时触发重排和重绘 <a href="http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html" target="_blank" rel="noopener">资料来源</a></p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/19/show-html/" data-id="cjilr5zdx00017ycbnborqq9b" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/01/hello-world/" class="article-date">
   <time datetime="2018-06-01T13:12:55.000Z" itemprop="datePublished">2018-06-01</time>
@@ -119,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/01/hello-world/">事件委托</a>
+    <h1 class="article-title" itemprop="name">
+      事件委托
     </h1>
   
 
@@ -155,50 +113,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="false-你好，hexo" class="article article-type-false" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/01/你好，hexo/" class="article-date">
-  <time datetime="2018-06-01T13:02:55.000Z" itemprop="datePublished">2018-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2018/06/19/show-html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          show_html
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/01/你好，hexo/">Ajax</a>
-    </h1>
   
+    <a href="/2018/06/01/你好，hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Ajax</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<li><font face="微软雅黑">1. 创建一个XMLHTTPRequest对象</font></li><br><li><font face="微软雅黑">2. 创建http请求（只打开url，并不发送请求）</font></li><br><li><font face="微软雅黑">3. 发送数据（get或post）</font></li><br><li><font face="微软雅黑">4. 设置回调函数的状态</font></li><br>—<br>## HTTP状态码<br><li><font face="微软雅黑">1<strong>：信息，服务器收到请求，需要请求者继续执行操作</strong></font></li><br><li><font face="微软雅黑">2：成功，操作被成功接受并处理</font></li><br><li><font face="微软雅黑">3<strong>：重定向，需要进一步的操作以完成请求</strong></font></li><br><li><font face="微软雅黑">4：客户端错误，请求包含语法错误或无法完成请求</font></li><br><li><font face="微软雅黑">5**：服务器错误，服务器在处理请求的过程中发生了错误</font></li>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/01/你好，hexo/" data-id="cjilr5ze000027ycbs7ex0r7t" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         

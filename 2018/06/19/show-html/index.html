@@ -5,19 +5,19 @@
   
 
   
-  <title>show_html | Hexo</title>
+  <title>网页生成 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改DOM">
+  <meta name="description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况: + 修改DO">
 <meta property="og:type" content="article">
-<meta property="og:title" content="show_html">
+<meta property="og:title" content="网页生成">
 <meta property="og:url" content="http://yoursite.com/2018/06/19/show-html/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改DOM">
+<meta property="og:description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况: + 修改DO">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-19T13:56:53.457Z">
+<meta property="og:updated_time" content="2018-06-19T14:26:45.319Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="show_html">
-<meta name="twitter:description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改DOM">
+<meta name="twitter:title" content="网页生成">
+<meta name="twitter:description" content="网页生成的过程 1. HTML代码转化成DOM2. CSS代码转化成CSSOM（CSS Object Model）3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况: + 修改DO">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      show_html
+      网页生成
     </h1>
   
 
@@ -90,7 +90,7 @@
 <li>1. HTML代码转化成DOM</li><br><li>2. CSS代码转化成CSSOM（CSS Object Model）</li><br><li>3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）</li><br><li>4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成</li><br><li>5. 将布局绘制（paint）在屏幕上</li>
 
 <p>网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:</p>
-<li><em> 修改DOM</em></li><br><li> 修改样式表</li><br><li>* 用户事件(比如鼠标悬停,页面滚动,输入框键入文字,改变窗口大小等)</li>
+<li>+ 修改DOM</li><br><li>+ 修改样式表</li><br><li>+ 用户事件(比如鼠标悬停,页面滚动,输入框键入文字,改变窗口大小等)</li>
 
 <p>重新渲染, 就需要重新生成布局和重新绘制,前者叫做重排(reflow),后者叫重绘(repaint)<br>重绘不一定需要重排,比如更改网页元素的背景色,就只会触发重绘,不会触发重排,因为布局没有改变,但是,重排必定导致重绘,比如改变一个网页元素的位置就会同时触发重排和重绘 <a href="http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html" target="_blank" rel="noopener">资料来源</a></p>
 </blockquote>
@@ -147,7 +147,7 @@
       <ul>
         
           <li>
-            <a href="/2018/06/19/show-html/">show_html</a>
+            <a href="/2018/06/19/show-html/">网页生成</a>
           </li>
         
           <li>

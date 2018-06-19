@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/19/show-html/">show_html</a>
+      <a class="article-title" href="/2018/06/19/show-html/">网页生成</a>
     </h1>
   
 
@@ -88,7 +88,7 @@
 <li>1. HTML代码转化成DOM</li><br><li>2. CSS代码转化成CSSOM（CSS Object Model）</li><br><li>3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）</li><br><li>4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成</li><br><li>5. 将布局绘制（paint）在屏幕上</li>
 
 <p>网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:</p>
-<li><em> 修改DOM</em></li><br><li> 修改样式表</li><br><li>* 用户事件(比如鼠标悬停,页面滚动,输入框键入文字,改变窗口大小等)</li>
+<li>+ 修改DOM</li><br><li>+ 修改样式表</li><br><li>+ 用户事件(比如鼠标悬停,页面滚动,输入框键入文字,改变窗口大小等)</li>
 
 <p>重新渲染, 就需要重新生成布局和重新绘制,前者叫做重排(reflow),后者叫重绘(repaint)<br>重绘不一定需要重排,比如更改网页元素的背景色,就只会触发重绘,不会触发重排,因为布局没有改变,但是,重排必定导致重绘,比如改变一个网页元素的位置就会同时触发重排和重绘 <a href="http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html" target="_blank" rel="noopener">资料来源</a></p>
 </blockquote>
@@ -129,7 +129,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<p></p><p align="left"> <strong>事件委托: </strong>就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. </p><p></p>
+<p><strong>事件委托: </strong>就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.</p>
 <h4 id="优点"><a href="#优点" class="headerlink" title="优点:"></a>优点:</h4><ul>
 <li>管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似的子元素，可以通过委托给父元素的监听函数来处理事件</li>
 <li>可以方便地动态添加和修改元素，不需要因为元素的改动而修改事件绑定</li>
@@ -229,7 +229,7 @@
       <ul>
         
           <li>
-            <a href="/2018/06/19/show-html/">show_html</a>
+            <a href="/2018/06/19/show-html/">网页生成</a>
           </li>
         
           <li>

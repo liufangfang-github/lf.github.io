@@ -83,7 +83,7 @@ body {
   background: #fff;
 }
 ol,
-ul {
+ul ,li{
   list-style: none;
 }
 table {

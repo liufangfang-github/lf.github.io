@@ -7,17 +7,17 @@
   
   <title>网页生成 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网页生成的过程 1. HTML代码转化成DOM 2. CSS代码转化成CSSOM（CSS Object Model） 3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息） 4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成 5. 将布局绘制（paint）在屏幕上网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改D">
+  <meta name="description" content="网页生成的过程1. HTML代码转化成DOM 2. CSS代码转化成CSSOM（CSS Object Model） 3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息） 4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成 5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网页生成">
 <meta property="og:url" content="http://yoursite.com/2018/06/19/show-html/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="网页生成的过程 1. HTML代码转化成DOM 2. CSS代码转化成CSSOM（CSS Object Model） 3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息） 4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成 5. 将布局绘制（paint）在屏幕上网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改D">
+<meta property="og:description" content="网页生成的过程1. HTML代码转化成DOM 2. CSS代码转化成CSSOM（CSS Object Model） 3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息） 4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成 5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-19T14:44:27.983Z">
+<meta property="og:updated_time" content="2018-06-19T14:58:16.078Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网页生成">
-<meta name="twitter:description" content="网页生成的过程 1. HTML代码转化成DOM 2. CSS代码转化成CSSOM（CSS Object Model） 3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息） 4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成 5. 将布局绘制（paint）在屏幕上网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改D">
+<meta name="twitter:description" content="网页生成的过程1. HTML代码转化成DOM 2. CSS代码转化成CSSOM（CSS Object Model） 3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息） 4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成 5. 将布局绘制（paint）在屏幕上  网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:  修改">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,12 +86,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="网页生成的过程"><a href="#网页生成的过程" class="headerlink" title="网页生成的过程"></a>网页生成的过程</h2><blockquote>
-<p><li>1. HTML代码转化成DOM</li></p>
+        <h2 id="网页生成的过程"><a href="#网页生成的过程" class="headerlink" title="网页生成的过程"></a>网页生成的过程</h2><p><li>1. HTML代码转化成DOM</li></p>
 <p><li>2. CSS代码转化成CSSOM（CSS Object Model）</li></p>
 <p><li>3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）</li></p>
 <p><li>4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成</li></p>
-<p><li>5. 将布局绘制（paint）在屏幕上</li><br>网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:</p>
+<p><li>5. 将布局绘制（paint）在屏幕上</li></p>
+<blockquote>
+<p>网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:</p>
 <ol>
 <li>修改DOM</li>
 <li>修改样式表</li>

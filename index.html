@@ -38,6 +38,25 @@
       </h1>
       
     </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
   </div>
 </header>
       <div class="outer">
@@ -65,12 +84,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="网页生成的过程"><a href="#网页生成的过程" class="headerlink" title="网页生成的过程"></a>网页生成的过程</h2><blockquote>
-<p><li>1. HTML代码转化成DOM</li></p>
+        <h2 id="网页生成的过程"><a href="#网页生成的过程" class="headerlink" title="网页生成的过程"></a>网页生成的过程</h2><p><li>1. HTML代码转化成DOM</li></p>
 <p><li>2. CSS代码转化成CSSOM（CSS Object Model）</li></p>
 <p><li>3. 结合DOM和CSSOM，生成一棵渲染树（包含每个节点的视觉信息）</li></p>
 <p><li>4. 生成布局（layout），即将所有渲染树的所有节点进行平面合成</li></p>
-<p><li>5. 将布局绘制（paint）在屏幕上</li><br>网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:</p>
+<p><li>5. 将布局绘制（paint）在屏幕上</li></p>
+<blockquote>
+<p>网页生成的过程中至少会渲染一次, 用户访问的过程中还会不断的渲染, 导致网页重新渲染的情况:</p>
 <ol>
 <li>修改DOM</li>
 <li>修改样式表</li>
@@ -166,12 +186,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<li><font face="微软雅黑">1. 创建一个XMLHTTPRequest对象</font></li><br><li><font face="微软雅黑">2. 创建http请求（只打开url，并不发送请求）</font></li><br><li><font face="微软雅黑">3. 发送数据（get或post）</font></li><br><li><font face="微软雅黑">4. 设置回调函数的状态</font></li>
-</blockquote>
-<h2 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h2><blockquote>
-<li><font face="微软雅黑">1**：信息，服务器收到请求，需要请求者继续执行操作</font></li><br><li>2**：成功，操作被成功接受并处理</li><br><li>3**：重定向，需要进一步的操作以完成请求</li><br><li>4**：客户端错误，请求包含语法错误或无法完成请求</li><br><li>5**：服务器错误，服务器在处理请求的过程中发生了错误</li>
-</blockquote>
+        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><li><font face="微软雅黑">1. 创建一个XMLHTTPRequest对象</font></li><br><li><font face="微软雅黑">2. 创建http请求（只打开url，并不发送请求）</font></li><br><li><font face="微软雅黑">3. 发送数据（get或post）</font></li><br><li><font face="微软雅黑">4. 设置回调函数的状态</font></li><br>## HTTP状态码<br><li><font face="微软雅黑">1**：信息，服务器收到请求，需要请求者继续执行操作</font></li><br><li>2**：成功，操作被成功接受并处理</li><br><li>3**：重定向，需要进一步的操作以完成请求</li><br><li>4**：客户端错误，请求包含语法错误或无法完成请求</li><br><li>5**：服务器错误，服务器在处理请求的过程中发生了错误</li>
 
       
     </div>

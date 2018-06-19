@@ -131,7 +131,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
+        <h2 id="事件委托和代理"><a href="#事件委托和代理" class="headerlink" title="事件委托和代理"></a>事件委托和代理</h2><blockquote>
 <p><strong>事件委托: </strong>就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.</p>
 <h4 id="优点"><a href="#优点" class="headerlink" title="优点:"></a>优点:</h4><ul>
 <li>管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似的子元素，可以通过委托给父元素的监听函数来处理事件</li>
@@ -185,7 +185,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
-<li><font face="微软雅黑">1. 创建一个XMLHTTPRequest对象</font></li><br><li><font face="微软雅黑">2. 创建http请求（只打开url，并不发送请求）</font></li><br><li><font face="微软雅黑">3. 发送数据（get或post）</font></li><br><li><font face="微软雅黑">4. 设置回调函数的状态</font></li><br>—<br>## HTTP状态码<br><li><font face="微软雅黑">1<strong>：信息，服务器收到请求，需要请求者继续执行操作</strong></font></li><br><li><font face="微软雅黑">2：成功，操作被成功接受并处理</font></li><br><li><font face="微软雅黑">3<strong>：重定向，需要进一步的操作以完成请求</strong></font></li><br><li><font face="微软雅黑">4：客户端错误，请求包含语法错误或无法完成请求</font></li><br><li><font face="微软雅黑">5**：服务器错误，服务器在处理请求的过程中发生了错误</font></li>
+<li><font face="微软雅黑">1. 创建一个XMLHTTPRequest对象</font></li><br><li><font face="微软雅黑">2. 创建http请求（只打开url，并不发送请求）</font></li><br><li><font face="微软雅黑">3. 发送数据（get或post）</font></li><br><li><font face="微软雅黑">4. 设置回调函数的状态</font></li>
+</blockquote>
+<h2 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h2><blockquote>
+<li><font face="微软雅黑">1**：信息，服务器收到请求，需要请求者继续执行操作</font></li><br><li>2**：成功，操作被成功接受并处理</li><br><li>3**：重定向，需要进一步的操作以完成请求</li><br><li>4**：客户端错误，请求包含语法错误或无法完成请求</li><br><li>5**：服务器错误，服务器在处理请求的过程中发生了错误</li>
 </blockquote>
 
       

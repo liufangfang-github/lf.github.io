@@ -7,17 +7,17 @@
   
   <title>事件委托 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ajax 发送请求的步骤 事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. 优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节">
+  <meta name="description" content="事件委托和代理 事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. 优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似">
 <meta property="og:type" content="article">
 <meta property="og:title" content="事件委托">
 <meta property="og:url" content="http://yoursite.com/2018/06/01/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Ajax 发送请求的步骤 事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. 优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节">
+<meta property="og:description" content="事件委托和代理 事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. 优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-19T14:17:33.167Z">
+<meta property="og:updated_time" content="2018-06-19T14:41:28.264Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="事件委托">
-<meta name="twitter:description" content="Ajax 发送请求的步骤 事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. 优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节">
+<meta name="twitter:description" content="事件委托和代理 事件委托: 就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数. 优点: 管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,7 +86,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Ajax-发送请求的步骤"><a href="#Ajax-发送请求的步骤" class="headerlink" title="Ajax 发送请求的步骤"></a>Ajax 发送请求的步骤</h2><blockquote>
+        <h2 id="事件委托和代理"><a href="#事件委托和代理" class="headerlink" title="事件委托和代理"></a>事件委托和代理</h2><blockquote>
 <p><strong>事件委托: </strong>就是把一个元素响应事件（click、keydown……）的函数委托到另一个元素, 一般来讲，会把一个或者一组元素的事件委托到它的父层或者更外层元素上，真正绑定事件的是外层元素，当事件响应到需要绑定的元素上时，会通过事件冒泡机制从而触发它的外层元素的绑定事件上，然后在外层元素上去执行函数.</p>
 <h4 id="优点"><a href="#优点" class="headerlink" title="优点:"></a>优点:</h4><ul>
 <li>管理的函数变少了。不需要为每个元素都添加监听函数。对于同一个父节点下面类似的子元素，可以通过委托给父元素的监听函数来处理事件</li>

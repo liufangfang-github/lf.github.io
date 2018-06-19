@@ -74,7 +74,6 @@ td {
   font-style: inherit;
   font-family: inherit;
   font-size: 100%;
-  text-align:left;
   vertical-align: baseline;
 }
 body {
@@ -83,7 +82,7 @@ body {
   background: #fff;
 }
 ol,
-ul ,li{
+ul {
   list-style: none;
 }
 table {
@@ -627,6 +626,7 @@ a.article-title:hover {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.4em;
   margin: 1.6em 20px;
+  text-align: center;
 }
 .article-entry blockquote footer {
   font-size: 14px;

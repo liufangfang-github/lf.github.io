@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="nodejs与JavaScript的区别前端javascript组成：　　ECMAScript，（是js的标准，js是它的具体实现和扩展，它描述语言的语法和基本对象，如：语法，运算符，语句，继承机制，数据结构以及一些内置对象）　　DOM（文档对象模型），描述处理网页内容的方法和接口，将整个文档document解析成dom树供用户使用js对文档进行处理。　　BOM（浏览器对象模型），描述可以和浏览器">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-19T15:09:37.047Z">
+<meta property="og:updated_time" content="2018-06-19T15:16:57.533Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nodejs">
 <meta name="twitter:description" content="nodejs与JavaScript的区别前端javascript组成：　　ECMAScript，（是js的标准，js是它的具体实现和扩展，它描述语言的语法和基本对象，如：语法，运算符，语句，继承机制，数据结构以及一些内置对象）　　DOM（文档对象模型），描述处理网页内容的方法和接口，将整个文档document解析成dom树供用户使用js对文档进行处理。　　BOM（浏览器对象模型），描述可以和浏览器">
@@ -87,16 +87,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="nodejs与JavaScript的区别"><a href="#nodejs与JavaScript的区别" class="headerlink" title="nodejs与JavaScript的区别"></a>nodejs与JavaScript的区别</h2><p>前端javascript组成：<br>　　ECMAScript，（是js的标准，js是它的具体实现和扩展，它描述语言的语法和基本对象，如：语法，运算符，语句，继承机制，数据结构以及一些内置对象）<br>　　DOM（文档对象模型），描述处理网页内容的方法和接口，将整个文档document解析成dom树供用户使用js对文档进行处理。<br>　　BOM（浏览器对象模型），描述可以和浏览器窗口交互的方法和接口（对象结构），如：window对象，history、location、navigator等。</p>
-<pre><code>nodejs除了语言基础ECMAScript外，还有os(操作系统)、file system(文件系统)、net(网络系统)、database(数据库)等，服务端处理所需的功能模块，如java是服务端语言除了语言本身，它也同样有处理文件，网络通信等能力。前端javascript是在浏览器环境下运行的，所以还包括dom和bom这两个浏览器环境下特有的对象模型。
-** NodeJS是以ECMASCRIPT为基础，然后在这个基础上扩展出来的一些操作其他东西（即操作非浏览器）的一些方法，比如操作OS操作系统、file文件系统、net网络、database数据库等。也就是说nodejs和JS在底层都是一样的，都是ecmascript，但是扩展出来的功能却是不一样的。一个是偏向于前端浏览器，一个是偏向于后端。
-在ecmascript部分node和JS其实是一样的，比如与数据类型的定义、语法结构，内置对象。但在js中的顶层对象是window对象，但是在node中没有什么window对象，node中的顶层对象是global对象。这就是二者的差异性。
-在window对象中，定义一个全局变量是可以通过Window来访问的，但是在node中是不能通过global对象来访问的
+<p>nodejs除了语言基础ECMAScript外，还有os(操作系统)、file system(文件系统)、net(网络系统)、database(数据库)等，服务端处理所需的功能模块，如java是服务端语言除了语言本身，它也同样有处理文件，网络通信等能力。前端javascript是在浏览器环境下运行的，所以还包括dom和bom这两个浏览器环境下特有的对象模型。<br>NodeJS是以ECMASCRIPT为基础，然后在这个基础上扩展出来的一些操作其他东西（即操作非浏览器）的一些方法，比如操作OS操作系统、file文件系统、net网络、database数据库等。也就是说nodejs和JS在底层都是一样的，都是ecmascript，但是扩展出来的功能却是不一样的。一个是偏向于前端浏览器，一个是偏向于后端。<br>在ecmascript部分node和JS其实是一样的，比如与数据类型的定义、语法结构，内置对象。但在js中的顶层对象是window对象，但是在node中没有什么window对象，node中的顶层对象是global对象。这就是二者的差异性。<br>在window对象中，定义一个全局变量是可以通过Window来访问的，但是在node中是不能通过global对象来访问的</p>
+<ol>
+<li>node.js和javascript区别还是挺大的，1个平台，1个是编程语言；</li>
+<li>javascript是客户端编程语言，需要浏览器的javascript解释器进行解释执行；</li>
+<li>node.js是一个基于Chrome JavaScript运行时建立的平台，它是对Google V8引擎进行了封装的运行环境；<br>简单的说node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似javascript的结构语法进行编程，在node.js上运行。</li>
+</ol>
 
-1. node.js和javascript区别还是挺大的，1个平台，1个是编程语言；
-2. javascript是客户端编程语言，需要浏览器的javascript解释器进行解释执行；
-3. node.js是一个基于Chrome JavaScript运行时建立的平台，它是对Google V8引擎进行了封装的运行环境；
-简单的说node.js就是把浏览器的解释器封装起来作为服务器运行平台，用类似javascript的结构语法进行编程，在node.js上运行。
-</code></pre>
       
     </div>
     <footer class="article-footer">

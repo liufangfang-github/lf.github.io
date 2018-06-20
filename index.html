@@ -86,12 +86,13 @@
       
         <h2 id="跨域产生的原因"><a href="#跨域产生的原因" class="headerlink" title="跨域产生的原因"></a>跨域产生的原因</h2><p>跨域的问题产生的原因是浏览器的同源策略<br><strong>同源策略</strong>是指协议相同、域名相同、端口相同；<a href="http://www.example.com/dir/page.html网址与一下网址同源的情况如下：" target="_blank" rel="noopener">http://www.example.com/dir/page.html网址与一下网址同源的情况如下：</a></p>
 <ul>
-<li><a href="http://www.example.com/dir2/other.html" target="_blank" rel="noopener">http://www.example.com/dir2/other.html</a> 同源</li>
-<li><a href="http://example.com/dir/other.html" target="_blank" rel="noopener">http://example.com/dir/other.html</a> 不同源（域名不同）</li>
-<li><a href="http://v2.www.example.com/dir/other.html" target="_blank" rel="noopener">http://v2.www.example.com/dir/other.html</a> 不同源（域名不同）</li>
-<li><a href="http://www.example.com:81/dir/other.html" target="_blank" rel="noopener">http://www.example.com:81/dir/other.html</a> 不同源（端口不同）<br>jsonp可以跨越同源策略，当我们使用了jsonp，将会是另外一种协议通信了；<br><strong>JSONP的最基本的原理是：</strong> 动态添加一个<script>标签，而script标签的src属性是没有跨域的限制的。这样说来，这种跨域方式其实与ajax XmlHttpRequest协议无关了。我们在用其他关于src的标签的时候，都可以跨域。所以我们只要动态构造的src标签同样可以做到跨域。<br>JSONP的优点是：它不像XMLHttpRequest对象实现的Ajax请求那样受到同源策略的限制；它的兼容性更好，在更加古老的浏览器中都可以运行，不需要XMLHttpRequest或ActiveX的支持；并且在请求完毕后可以通过调用callback的方式回传结果。<br>JSONP的缺点则是：它只支持GET请求而不支持POST等其它类型的HTTP请求</li>
+<li><code><a href="http://www.example.com/dir2/other.html" target="_blank" rel="noopener">http://www.example.com/dir2/other.html</a></code>：同源</li>
+<li><code><a href="http://example.com/dir/other.html" target="_blank" rel="noopener">http://example.com/dir/other.html</a></code>：不同源（域名不同）</li>
+<li><code><a href="http://v2.www.example.com/dir/other.html" target="_blank" rel="noopener">http://v2.www.example.com/dir/other.html</a> </code>：不同源（域名不同）</li>
+<li><code><a href="http://www.example.com:81/dir/other.html" target="_blank" rel="noopener">http://www.example.com:81/dir/other.html</a> </code>：不同源（端口不同）</li>
 </ul>
-</script></li></ul>
+<p>jsonp可以跨越同源策略，当我们使用了jsonp，将会是另外一种协议通信了；<br><strong>JSONP的最基本的原理是：</strong> 动态添加一个<script>标签，而script标签的src属性是没有跨域的限制的。这样说来，这种跨域方式其实与ajax XmlHttpRequest协议无关了。我们在用其他关于src的标签的时候，都可以跨域。所以我们只要动态构造的src标签同样可以做到跨域。<br>JSONP的优点是：它不像XMLHttpRequest对象实现的Ajax请求那样受到同源策略的限制；它的兼容性更好，在更加古老的浏览器中都可以运行，不需要XMLHttpRequest或ActiveX的支持；并且在请求完毕后可以通过调用callback的方式回传结果。<br>JSONP的缺点则是：它只支持GET请求而不支持POST等其它类型的HTTP请求</p>
+</script></p>
       
     </div>
     <footer class="article-footer">
